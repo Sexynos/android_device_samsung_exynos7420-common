@@ -108,10 +108,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_HOST_PACKAGES += \
 	dtbhtoolExynos
 
-# FastCharge
-PRODUCT_PACKAGES += \
-    vendor.lineage.fastcharge@1.0-service.samsung
-
 # Fingerprint
 PRODUCT_PACKAGES += \
 	android.hardware.biometrics.fingerprint@2.1-service.samsung
@@ -154,10 +150,6 @@ PRODUCT_PACKAGES += \
 # Lights
 PRODUCT_PACKAGES += \
 	android.hardware.light@2.0-service.samsung
-
-# Livedisplay
-PRODUCT_PACKAGES += \
-	vendor.lineage.livedisplay@2.0-service.universal7420
 
 # Memory
 PRODUCT_PACKAGES += \
@@ -245,14 +237,6 @@ PRODUCT_PACKAGES += \
 # SSWAP - For swap
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/prebuilt/sswap:$(TARGET_COPY_OUT_VENDOR)/bin/sswap
-
-# Touch
-# PRODUCT_PACKAGES += \
-# 	vendor.lineage.touch@1.0-service.samsung
-
-# Trust
-PRODUCT_PACKAGES += \
-	vendor.lineage.trust@1.0-service
 
 # USB
 PRODUCT_PACKAGES += \

@@ -14,16 +14,12 @@
 # limitations under the License.
 #
 
-#
 # Board
-#
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.chipname=exynos7420 \
 	ro.arch=exynos7420
 
-#
 # Dalvik
-#
 PRODUCT_PROPERTY_OVERRIDES += \
 	dalvik.vm.image-dex2oat-filter=speed \
 	dalvik.vm.dex2oat-filter=speed \
@@ -34,9 +30,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	dalvik.vm.heapminfree=512k \
 	dalvik.vm.heapmaxfree=8m
 
-#
-# Ril
-#
+# RIL
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.radio.add_power_save=1 \
 	persist.radio.apm_sim_not_pwdn=1 \
@@ -51,72 +45,48 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.ril.telephony.mqanelements=6 \
 	ro.ril.gprsclass=10
 
-#
 # OMX
-#
 PRODUCT_PROPERTY_OVERRIDES += \
 	debug.stagefright.ccodec=0
 
-#
 # Miracast (Wireless Display)
-#
 PRODUCT_PROPERTY_OVERRIDES += \
 	wlan.wfd.hdcp=disable \
 	persist.debug.wfd.enable=1 \
 	persist.sys.wfd.virtual=0
 
-#
 # NFC
-#
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.nfc.sec_hal=true \
 	ro.nfc.fw_dl_on_boot=false
 
-#
 # HWC
-#
 PRODUCT_PROPERTY_OVERRIDES += \
 	debug.hwc.force_gpu=0 \
 	debug.sf.latch_unsignaled=1
 
-#
 # Graphics
-#
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.opengles.version=196610 \
 	debug.hwui.use_buffer_age=false \
 	ro.sf.lcd_density=640 \
 	sys.use_fifo_ui=1
 
-#
 # Audio
-#
 PRODUCT_PROPERTY_OVERRIDES += \
 	af.fast_track_multiplier=1 \
 	audio_hal.force_voice_config=wide
 
-#
 # Storage
-#
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sys.sdcardfs=1
 
-#
-# Vendor Security Patch Level
-#
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.lineage.build.vendor_security_patch=2019-01-01
-
-#
 # Wi-Fi
-#
 PRODUCT_PROPERTY_OVERRIDES += \
 	wifi.interface=wlan0 \
 	wifi.direct.interface=p2p-dev-wlan0
 
-#
 # USB
-#
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.adb.nonblocking_ffs=0 \
 	persist.adb.nonblocking_ffs=0 \
