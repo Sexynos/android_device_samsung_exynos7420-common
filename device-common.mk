@@ -91,10 +91,9 @@ PRODUCT_PACKAGES += \
 	android.hardware.camera.provider@2.4-impl \
 	android.hardware.camera.provider@2.4-service
 
-# Configstore
+# ConfigStore
 PRODUCT_PACKAGES += \
-	android.hardware.configstore@1.0-impl \
-	android.hardware.configstore@1.0-service
+    disable_configstore
 
 # Debugging
 -include $(LOCAL_PATH)/system_prop_debug.mk
