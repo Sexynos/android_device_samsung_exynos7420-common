@@ -112,6 +112,9 @@ TARGET_BOARD_PLATFORM := exynos5
 TARGET_SOC := exynos7420
 TARGET_SLSI_VARIANT := bsp
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/fstab.samsungexynos7420.recovery
+
 # Ril - Shim
 TARGET_LD_SHIM_LIBS += \
 	/vendor/lib/libsec-ril.so|/vendor/lib/libcutils_shim.so \
