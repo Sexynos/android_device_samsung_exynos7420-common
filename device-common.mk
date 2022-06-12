@@ -120,12 +120,7 @@ PRODUCT_PACKAGES += \
 	android.hardware.graphics.allocator@2.0-impl \
 	android.hardware.graphics.allocator@2.0-service \
 	android.hardware.graphics.composer@2.1-service \
-	android.hardware.graphics.mapper@2.0-impl \
-	gralloc.exynos5 \
-	hwcomposer.exynos5 \
-	libfimg \
-	libhwc2on1adapter \
-	libion
+	android.hardware.graphics.mapper@2.0-impl
 
 # Health
 PRODUCT_PACKAGES += \
@@ -152,7 +147,6 @@ PRODUCT_PACKAGES += \
 
 # Memory
 PRODUCT_PACKAGES += \
-	memtrack.exynos5 \
 	android.hardware.memtrack@1.0-impl
 
 # Media profile
@@ -263,10 +257,6 @@ PRODUCT_PACKAGES += \
 	android.hardware.wifi@1.0-service.legacy \
 	TetheringConfigOverlay \
 	WifiOverlay
-
-# call Samsung LSI board support package
-$(call inherit-product, hardware/samsung_slsi/exynos5/exynos5.mk)
-$(call inherit-product, hardware/samsung_slsi/exynos7420/exynos7420.mk)
 
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/universal7420-common/universal7420-common-vendor.mk)
